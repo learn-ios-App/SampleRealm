@@ -7,20 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B292CFC29F76A1900B391D4 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B292CFB29F76A1900B391D4 /* AddTaskView.swift */; };
 		8BAB2D8229F69769001DF423 /* SampleRealmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB2D8129F69769001DF423 /* SampleRealmApp.swift */; };
 		8BAB2D8429F69769001DF423 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB2D8329F69769001DF423 /* ContentView.swift */; };
 		8BAB2D8629F6976A001DF423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BAB2D8529F6976A001DF423 /* Assets.xcassets */; };
 		8BAB2D8929F6976A001DF423 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BAB2D8829F6976A001DF423 /* Preview Assets.xcassets */; };
 		8BAB2D9129F6978B001DF423 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8BAB2D9029F6978B001DF423 /* Realm */; };
 		8BAB2D9329F6978B001DF423 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8BAB2D9229F6978B001DF423 /* RealmSwift */; };
+		8BB4C8BC29F6C39700BD2C65 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB4C8BB29F6C39700BD2C65 /* TaskModel.swift */; };
+		8BB4C8BE29F6C3CA00BD2C65 /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB4C8BD29F6C3CA00BD2C65 /* ListRow.swift */; };
+		8BB4C8C029F6C44C00BD2C65 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB4C8BF29F6C44C00BD2C65 /* TaskViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B292CFB29F76A1900B391D4 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		8BAB2D7E29F69769001DF423 /* SampleRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BAB2D8129F69769001DF423 /* SampleRealmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRealmApp.swift; sourceTree = "<group>"; };
 		8BAB2D8329F69769001DF423 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8BAB2D8529F6976A001DF423 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BAB2D8829F6976A001DF423 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8BB4C8BB29F6C39700BD2C65 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		8BB4C8BD29F6C3CA00BD2C65 /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		8BB4C8BF29F6C44C00BD2C65 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				8BAB2D8129F69769001DF423 /* SampleRealmApp.swift */,
-				8BAB2D8329F69769001DF423 /* ContentView.swift */,
-				8BAB2D8529F6976A001DF423 /* Assets.xcassets */,
+				8BB4C8BA29F6C33B00BD2C65 /* ViewModel */,
+				8BB4C8B729F6C31C00BD2C65 /* Model */,
+				8BB4C8B829F6C32200BD2C65 /* View */,
 				8BAB2D8729F6976A001DF423 /* Preview Content */,
 			);
 			path = SampleRealm;
@@ -66,9 +75,36 @@
 		8BAB2D8729F6976A001DF423 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				8BAB2D8529F6976A001DF423 /* Assets.xcassets */,
 				8BAB2D8829F6976A001DF423 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8BB4C8B729F6C31C00BD2C65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8BB4C8BB29F6C39700BD2C65 /* TaskModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8BB4C8B829F6C32200BD2C65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8BAB2D8329F69769001DF423 /* ContentView.swift */,
+				8BB4C8BD29F6C3CA00BD2C65 /* ListRow.swift */,
+				8B292CFB29F76A1900B391D4 /* AddTaskView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8BB4C8BA29F6C33B00BD2C65 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8BB4C8BF29F6C44C00BD2C65 /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BB4C8BE29F6C3CA00BD2C65 /* ListRow.swift in Sources */,
+				8BB4C8BC29F6C39700BD2C65 /* TaskModel.swift in Sources */,
 				8BAB2D8429F69769001DF423 /* ContentView.swift in Sources */,
+				8B292CFC29F76A1900B391D4 /* AddTaskView.swift in Sources */,
+				8BB4C8C029F6C44C00BD2C65 /* TaskViewModel.swift in Sources */,
 				8BAB2D8229F69769001DF423 /* SampleRealmApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
